@@ -34,7 +34,7 @@ this.profissao = []
 this.pintar_o_cabelo = function (cor){
   this.cor_do_cabelo = cor
 }
-  this.constratar = function () {
+  this.contratar = function () {
   this.profissao.push(...arguments)
 }
 this.crescer = function (){
@@ -61,3 +61,21 @@ class Teste {
 }
 
 //HOSTING
+
+class Ponto{
+  constructor(nome,x,y){
+    this.nome = nome
+    this.x = x
+    this.y = y
+  }
+  mover_horizontalmente(lado){
+    this.x = (this.x + lado)
+    return this.x
+
+  }
+  mover_verticalmente(altura){
+    this.y = (this.y + altura )
+    return this.y
+
+ }
+}
